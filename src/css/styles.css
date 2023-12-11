@@ -15,13 +15,13 @@ body {
     margin: 0;
 }
 
-img {
+.navigation--logo-img {
     width: 30px;
     height: 20px;
     border-radius: 50%;
 }
 
-nav {
+.navigation {
     background-color: black;
     color: white; 
     display: grid;
@@ -30,7 +30,7 @@ nav {
     padding: 10px;
 }
 
-nav ul {
+.navigation .navigation--list{
     list-style-type: none;  
     display: grid;
     grid-auto-flow: column;
@@ -39,16 +39,16 @@ nav ul {
     margin-right: 10px;   
 }
 
-.mobile {
+.navigation--mobile {
     display: none;
 }
 
-.dropdown {
+.navigation--list-dropdown {
     position: relative;
     display: inline-block;
 }
 
-.dropdown-content {
+.navigation--list-dropdown-dropdown-content {
     display: none;
     position: absolute;
     min-width: 100px;
@@ -56,45 +56,45 @@ nav ul {
     z-index: 1;
 }
 
-.dropdown-btn {
+.navigation--list--dropdown--dropdown-btn {
     background-color: #111;
     color: white;
     border: none;
     font-weight: bold;
 }
 
-.dropdown-content a {
+.navigation--list-dropdown-dropdown-content .navigation--list-anchor {
     display: block;
     padding: 10px 20px;
     color: white;
     background-color: black;
 }
 
-.dropdown-content a:hover {
+.navigation--list-dropdown-dropdown-content .navigation--list--dropdown--dropdown-content-anchor:hover {
     display: block;
     padding: 10px 20px;
     color: blue;
 }
 
-.dropdown:hover .dropdown-content {
+.navigation--list-dropdown:hover .navigation--list-dropdown-dropdown-content {
     display: block;
 }
 
-ul a {
+.navigation--list .navigation--list-anchor {
     text-decoration: none;
     color: white; 
 }
 
-a:hover {
+.navigation--list--dropdown--dropdown-content-anchor:hover, .navigation--list-anchor:hover {
     color: blue;
 }
 
-ul button {
+.navigation--list .navigation--list--dropdown--dropdown-btn {
     background-color: black;
     color: white;
     border: none;
 }
-#Home {
+.Home {
     display: grid;
     
     text-align: center;
@@ -102,24 +102,24 @@ ul button {
     
 }
 
-.has-bcImage{
+.Home--bcImage{
     background: url('/images/webDevelopment.jpeg') no-repeat center center fixed;
     background-size: cover;
     
 }
-#Home section{
+.Home--section{
     background-color: rgb(15, 232, 174);
     height: 55vh;
     text-align: center;
 
 }
 
-#Accomplishments {
+.Accomplishments {
     background-color: #570505;
     margin-bottom: 2px;
 }
 
-#Accomlishments header {
+.Accomlishments--header {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 10px;
@@ -128,19 +128,19 @@ ul button {
     
 }
 
-#Accomplishments article {
+.Accomplishments--article {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 10px;
     justify-content: space-around;
 }
 
-#Accomplishments iframe {
+.Accomplishments--article-iframe {
     margin: 10px;
     width: 250px;
     height: 200px;   
 }
-#contacts {
+.contacts {
     color: white;
     background-color: rgb(220, 158, 13);
     display: flex;
@@ -149,7 +149,7 @@ ul button {
     justify-content: space-around;
     height: 80vh;
 }
-#contacts article{
+.contacts--article{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -157,87 +157,87 @@ ul button {
     
 }
 
-#contacts table,th,td{
+.contacts .contacts--article--one-table,.contacts--article--one--table-th,.contacts--article--one--table-td{
     border: 2px solid black;
     border-radius: 5px;
 }
-#hobbies header{
+.hobbies--header{
     text-align: center;
     color: white;
     background-color: rgba(19, 61, 168, 0.489);
 }
-#hobbies .image-container{
+.hobbies--image-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr)); 
     grid-gap: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
     background-color: #48f000;}
-.bcImage1{
+.hobbies--image-container-bcImage1{
     background: url(/images/football.jpeg) no-repeat;
     border-radius: 9px;
     width: 100%;
 }
-.bcImage2{
+.hobbies--image-container-bcImage2{
     background: url(/images/gaming.jpeg) no-repeat;
     border-radius: 9px;
     width: 100%;
 }
-.bcImage3{
+.hobbies--image-container-bcImage3{
     background: url(/images/techGadgets.jpeg) no-repeat;
     border-radius: 9px;
     width: 100%;
 }
-.bcImage4{
+.hobbies--image-container-bcImage4{
     background: url(/images/fitnessAndWellness.jpeg) no-repeat;
     border-radius: 9px;
     width: 100%;
 }
-.bcImage5{
+.hobbies--image-container-bcImage5{
     background: url(/images/movie.jpeg) no-repeat;
     border-radius: 9px;
     width: 100%;
 }
-.bcImage6{
+.hobbies--image-container-bcImage6{
     background: url(/images/reaading.jpeg) no-repeat;
     border-radius: 9px;
     width: 100%;
 }
-.bcImage7{
+.hobbies--image-container-bcImage7{
     background: url(/images/travel.jpeg) no-repeat;
     border-radius: 9px;
     width: 100%;
 }
-.bcImage8{
+.hobbies--image-container-bcImage8{
     background: url(/images/volunter.png) no-repeat;
     border-radius: 9px;
     width: 100%;
 }
-.bcImage9{
+.hobbies--image-container-bcImage9{
     background: url(/images/webDevelopment.jpeg) no-repeat;
     border-radius: 9px;
     width: 100%;
 }
-.bcImage10{
+.hobbies--image-container-bcImage10{
     background: url(/images/music.jpeg) no-repeat;
     border-radius: 9px;
     width: 100%;
 }
-.bcImage11{
+.hobbies--image-container-bcImage11{
     background: url(/images/art.jpeg) no-repeat;
     border-radius: 9px;
     width: 100%;
 }
-.bcImage12{
+.hobbies--image-container-bcImage12{
     background: url(/images/graphicDesign.jpeg) no-repeat;
     border-radius: 9px;
     width: 100%;
 }
-.image-container p{
+.hobbies--image-container-p{
     color: royalblue;
     text-align: center;
 }
-#skills {
+.skills {
     margin-top: 2px;
     background-color: #555;
     display: grid;
@@ -250,31 +250,31 @@ ul button {
     
 
 }
-.bcImage{
+.skills--bcImage{
     background: url(/images/webDevelopment.jpeg) top center repeat;
     width: 100%;
     height: 15vh; 
     grid-column-start: 1;   
     grid-column-end: 3;
 }
-#skills h1{
+.skills--header-h1{
     font-weight:bolder;
     font-size: 1.4rem;
     font-family:cursive ;
     color: blue;
 }
-#skills ul{
+.skills--one--section-list,.skills--two--section-list{
     list-style-type: none;
    text-align: center;
 
 
 }
-#skills ul li{
+.skills--one--section--list-li,.skills--two--section--list-li{
     padding: 0.4em;
 
 }
 
-footer {
+.footer {
     background-color: black;
     color: white;
     display: grid;
@@ -287,59 +287,60 @@ footer {
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
    
-    nav ul{
+    .navigation .navigation--list{
         display: none;  
     }
-    .mobile{
+    
+    .navigation--mobile{
         width: 40px;
         height: 30px;
-        color: white;
-        background-color: black;
+        background-color: white;
+        color: #000;
         display: grid;
     }
-    .mobile:focus + ul,
-    nav ul:hover{
+    .navigation--mobile:focus + .navigation--list,
+    .navigation .navigation--list:hover{
         display: grid;
         grid-template-rows: 1fr 1fr 1fr 1fr;
         justify-content: end;  
     }
-    ul li {
+    .navigation--list-li{
         padding: 10px;
     }
-    .dropdown {
+    .navigation--list-dropdown {
         
         display: grid;
         grid-template-columns: 1fr;
     }
-    .dropdown-content{
-        margin-top: 40px;
+    .navigation--list-dropdown-dropdown-content{
+        margin-top: 50px;
     }
-    #Home section{
+    .Home--section{
         height: 90vh;
     }
-    #Home section p{
+    .Home--section-p{
         font-size: 25px;
         
     }
-    #Home section h2{
+    .Home--section-h2{
         padding-top: 20px;
     }
 
-    #Accomplishments header {
+    .Accomplishments--header {
         display: flex;
         flex-direction: column;
     }
 
-    #Accomplishments article {
+    .Accomplishments--article {
         display: grid;
         gap: 10px;
         grid-template-columns: 1fr; 
     }
     
-    #Accomplishments .sec1, .sec2 {
+    .Accomplishments--sec1, .Accomplishments--sec2 {
         grid-column: 1; 
     }
-    #contacts{
+    .contacts{
         color: white;
         background-color: rgb(220, 158, 13);
         display: flex;
@@ -348,35 +349,29 @@ footer {
         justify-content: space-around;
         height: 90vh;
     }
-    #contacts h1{
+    .contacts h1{
         color: rgba(19, 61, 168, 0.989);
         
     }
-    #contacts article{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-around;
-        
-    }
-    
-    table,th,td{
-        border: 2px solid black;
-        border-radius: 5px;
-    }
-    #contacts article{
+    .contacts--article{
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         
     }
-    #hobbies header{
+    
+    .contacts--article--one-table,.contacts--article--one--table-td,.contacts--article--one--table-th{
+        border: 2px solid black;
+        border-radius: 5px;
+    }
+    
+    .hobbies--header{
         text-align: center;
         color: white;
         background-color: rgba(19, 61, 168, 0.489);
     }
-    #hobbies .image-container{
+    .hobbies--image-container{
         display: flex;
         flex-flow: row wrap;
         margin-left: 10px;
@@ -386,95 +381,95 @@ footer {
         background-color: #48f000;
         
     }
-    .image-container p{
+    .hobbies--image-container-p{
         color: royalblue;
         text-align: center;
     }
-    .bcImage1{
+    .hobbies--image-container-bcImage1{
         background: url(/images/football.jpeg) no-repeat;
         border-radius: 9px;
         width: 45vw;
         text-align:center;
     
     }
-    .bcImage2{
+    .hobbies--image-container-bcImage2{
         background: url(/images/gaming.jpeg) no-repeat;
         border-radius: 9px;
         width: 45vw;
         text-align:center;
     
     }
-    .bcImage3{
+    .hobbies--image-container-bcImage3{
         background: url(/images/techGadgets.jpeg) no-repeat;
         border-radius: 9px;
         width: 45vw;
         text-align:center;
     
     }
-    .bcImage4{
+    .hobbies--image-container-bcImage4{
         background: url(/images/fitnessAndWellness.jpeg) no-repeat;
         border-radius: 9px;
         width: 45vw;
         text-align:center;
     
     }
-    .bcImage5{
+    .hobbies--image-container-bcImage5{
         background: url(/images/movie.jpeg) no-repeat;
         border-radius: 9px;
         width: 45vw;
         text-align:center;
     
     }
-    .bcImage6{
+    .hobbies--image-container-bcImage6{
         background: url(/images/reaading.jpeg) no-repeat;
         border-radius: 9px;
         width: 45vw;
         text-align:center;
     
     }
-    .bcImage7{
+    .hobbies--image-container-bcImage7{
         background: url(/images/travel.jpeg) no-repeat;
         border-radius: 9px;
         width: 45vw;
         text-align:center;
     
     }
-    .bcImage8{
+    .hobbies--image-container-bcImage8{
         background: url(/images/volunter.png) no-repeat;
         border-radius: 9px;
         width: 45vw;
         text-align:center;
     
     }
-    .bcImage9{
+    .hobbies--image-container-bcImage9{
         background: url(/images/webDevelopment.jpeg) no-repeat;
         border-radius: 9px;
         width: 45vw;
         text-align:center;
     
     }
-    .bcImage10{
+    .hobbies--image-container-bcImage10{
         background: url(/images/music.jpeg) no-repeat;
         border-radius: 9px;
         width: 45vw;
         text-align:center;
     
     }
-    .bcImage11{
+    .hobbies--image-container-bcImage11{
         background: url(/images/art.jpeg) no-repeat;
         border-radius: 9px;
         width: 45vw;
         text-align:center;
     
     }
-    .bcImage12{
+    .hobbies--image-container-bcImage12{
         background: url(/images/graphicDesign.jpeg) no-repeat;
         border-radius: 9px;
         width: 45vw;
         text-align:center;
     
     }
-    #skills{
+    .skills{
     
         background-color: #555;
         display: flex;
@@ -487,69 +482,69 @@ footer {
         text-align:center;
     
     }
-    .bcImage{
+    .skills--bcImage{
         background: url(/images/webDevelopment.jpeg) center fixed;
         width: 100vw;
         height: 15vh;    
     }
-    #skills h1{
+    .skills--header-h1{
         font-weight:bolder;
         font-size: 1.4rem;
         font-family:cursive ;
         color: blue;
     }
-    #skills ul{
+    .skills--one--section-list,.skills--two--section-list{
         list-style-type: none;
     
     }
-    #skills ul li{
+    .skills--one--section--list-li,.skills--two--section--list-li{
         padding: 0.1em;
         
     }
     
-    #skills:not(:first-child) {
+    .skills:not(:first-child) {
         flex: 1;
       }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {
-    #Home section{
+    .Home--section{
         height: 90vh;
     }
-    #Home section p{
+    .Home--section-p{
         font-size:30px;
         text-align: left;
         margin-left: 20px;
         
     }
-    #Home section h2{
+    .Home--section-h2{
         font-size: 50px;
         float: left;
         margin-right: 10px;
        
     }
-    #Accomplishments{
+    .Accomplishments{
         height: 90vh;
     }
-    #Accomplishments article {
+    .Accomplishments--article {
         display: grid;
         gap: 10px;
         grid-template-columns: 1fr 1fr;
     }
 
-    #Accomplishments iframe {
+    .Accomplishments--article-iframe {
         width: 90%;
         box-sizing: border-box;
     }
-    #hobbies .image-container{
+    .hobbies--image-container{
         display: grid;
         grid-template-columns: repeat(3,1fr);
         height: 80vh;
     }
-    #skills{
+    .skills{
         height: 100%;
     }
-    #contacts{
+    .contacts{
         height: 90vh;
     }
 } 
