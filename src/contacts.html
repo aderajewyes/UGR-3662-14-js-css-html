@@ -5,77 +5,86 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
-        <nav>
-            <div class="logo">
-                <img src="./images/ad.jpeg" alt=""> Aderajew Yeshiwendm
-            </div>
-            <button class="mobile">
-                <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 448 512"><path fill="#d1d9e5" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+    <nav class="navigation">
+        <div class="navigation--logo">
+            <img class="navigation--logo-img" src="./images/ad.jpeg" alt=""> 
+            Aderajew Yeshiwendm
+        </div>
+        <button class="navigation--mobile">
+                       
+        
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>            <ul class="navigation navigation--list">
             </button>
-            <ul>
-                <li><a href="Home.html" target="_blank">Home</a></li>
-                <div class="dropdown">
-                    <li><button class="dropdown-btn">About</button></li>
-                    <div class="dropdown-content">
-                        <a href="Accomplishments.html" target="_blank">Accomplishments</a>
-                        <a href="skills.html" target="_blank">Skills</a>
-                        <a href="hobbies.html" target="_blank">Hobbies</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <li><button class="dropdown-btn">Services</button></li>
-                    <div class="dropdown-content">
-                        <a href="">Web development</a>
-                        <a href="">Web design</a>
-                        
-                    </div>
-                </div>
-                <li><a href="contacts.html" target="_blank">Contacts</a></li>
-            </ul>
+            <ul class="navigation--list">
+            <li class="navigation--list-li"><a class="navigation--list-anchor" href="Home.html" target="_blank">Home</a></li>
             
-            
-        </nav>
+            <div class="navigation--list-dropdown">
+                <li class="navigation--list-li"><button class="navigation--list--dropdown--dropdown-btn">About</button></li>
+                <div class="navigation--list-dropdown-dropdown-content">
+                    <a class="navigation--list-anchor" href="Accomplishments.html" target="_blank">Accomplishments</a>
+                    <a class="navigation--list-anchor" href="skills.html" target="_blank">Skills</a>
+                    <a class="navigation--list-anchor" href="hobbies.html" target="_blank">Hobbies</a>
+                </div>
+            </div>
+            <div class="navigation--list-dropdown">
+                <li class="navigation--list-li"><button class="navigation--list--dropdown--dropdown-btn">Services</button></li>
+                <div class="navigation--list-dropdown-dropdown-content">
+                    <a class="navigation--list-anchor" href="">Web development</a>
+                    <a class="navigation--list-anchor" href="">Web design</a>
+                    
+                </div>
+            </div>
+            <li class="navigation--list-li"><a class="navigation--list-anchor" href="contacts.html" target="_blank">Contacts</a></li>
+        </ul>
+        
+        
+    </nav>
    
-    <main id="contacts">
+    <main class="contacts">
         <header>
             <h1>You can contact me using these list of contacts</h1>
         </header>
-        <section class="one">
-            <table>
+        <article class="contacts--article">
+        <section class="contacts--article-one">
+            <table class="contacts--article--one-table">
                 <tr>
-                    <th>social media</th>
-                    <th>my contact</th>
+                    <th class="contacts--article--one--table-th">social media</th>
+                    <th class="contacts--article--one--table-th">my contact</th>
                 </tr>
                 <tr>
-                    <td><img src="./images/facebook.png" alt=""></td>
-                    <td>https://www.facebook.com/profile.php?id=61553098255218</td>
+                    <td class="contacts--article--one--table-td"><img src="./images/facebook.png" alt=""></td>
+                    <td class="contacts--article--one--table-td">https://www.facebook.com/profile.php?id=61553098255218</td>
                 </tr>
                 <tr>
-                    <td><img src="./images/email.png" alt=""></td>
-                    <td>adeyeshi294@gmail.com</td>
+                    <td class="contacts--article--one--table-td"><img src="./images/email.png" alt=""></td>
+                    <td class="contacts--article--one--table-td">adeyeshi294@gmail.com</td>
                 </tr>
                 <tr>
-                    <td><img src="./images/telegram.png" alt=""></td>
-                    <td>@AD_YESH</td>
+                    <td class="contacts--article--one--table-td"><img src="./images/telegram.png" alt=""></td>
+                    <td class="contacts--article--one--table-td">@AD_YESH</td>
                 </tr>
             </table>
         </section>
-        <section class="two">
+        <section class="contacts--article-two">
             <p>Feel Free To Contact Me At Any Time!
             using phone call my number 
         </p>
             <p>+251977658826</p>
         </section>
+    </article>
     </main>
-    <footer>
-        <img src="./images/ad.jpeg" alt=""> 
-        <p class="left"> Aderajew Yeshiwendm</p>
-        <p class="right">Copyright © 2023 Aderajew.</p>
-        <p class="right">my proficiency level is junior</p>
+    <footer class="footer">
+        <img class="navigation--logo-img" src="./images/ad.jpeg" alt=""> 
+        <p class="footer--left"> Aderajew Yeshiwendm</p>
+        <p class="footer--right">Copyright © 2023 Aderajew.</p>
+        <p class="footer--right">my proficiency level is junior</p>
+        
+
+    
     </footer>
     
 </body>
