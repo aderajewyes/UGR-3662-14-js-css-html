@@ -5,104 +5,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>portfolio</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-        <nav>
-            <div class="logo">
-                <img src="./images/ad.jpeg" alt=""> Aderajew Yeshiwendm
-            </div>
-            <button class="mobile">
-                <svg xmlns="http://www.w3.org/2000/svg"viewBox="0 0 448 512"><path fill="#d1d9e5" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
-            </button>
-            <ul>
-                <li><a href="Home.html" target="_blank">Home</a></li>
-                <div class="dropdown">
-                    <li><button class="dropdown-btn">About</button></li>
-                    <div class="dropdown-content">
-                        <a href="Accomplishments.html" target="_blank">Accomplishments</a>
-                        <a href="skills.html" target="_blank">Skills</a>
-                        <a href="hobbies.html" target="_blank">Hobbies</a>
-                    </div>
-                </div>
-                <div class="dropdown">
-                    <li><button class="dropdown-btn">Services</button></li>
-                    <div class="dropdown-content">
-                        <a href="">Web development</a>
-                        <a href="">Web design</a>
-                        
-                    </div>
-                </div>
-                <li><a href="contacts.html" target="_blank">Contacts</a></li>
-            </ul>
-            
-            
-        </nav>
     
-    <main id="hobbies">
-        <header>
+    <nav class="navigation">
+        <div class="navigation--logo">
+            <img class="navigation--logo-img" src="./images/ad.jpeg" alt=""> 
+            Aderajew Yeshiwendm
+        </div>
+        <button class="navigation--mobile">
+                       
+        
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>            <ul class="navigation navigation--list">
+            </button>
+            <ul class="navigation--list">
+            <li class="navigation--list-li"><a class="navigation--list-anchor" href="Home.html" target="_blank">Home</a></li>
+            
+            <div class="navigation--list-dropdown">
+                <li class="navigation--list-li"><button class="navigation--list--dropdown--dropdown-btn">About</button></li>
+                <div class="navigation--list-dropdown-dropdown-content">
+                    <a class="navigation--list-anchor" href="Accomplishments.html" target="_blank">Accomplishments</a>
+                    <a class="navigation--list-anchor" href="skills.html" target="_blank">Skills</a>
+                    <a class="navigation--list-anchor" href="hobbies.html" target="_blank">Hobbies</a>
+                </div>
+            </div>
+            <div class="navigation--list-dropdown">
+                <li class="navigation--list-li"><button class="navigation--list--dropdown--dropdown-btn">Services</button></li>
+                <div class="navigation--list-dropdown-dropdown-content">
+                    <a class="navigation--list-anchor" href="">Web development</a>
+                    <a class="navigation--list-anchor" href="">Web design</a>
+                    
+                </div>
+            </div>
+            <li class="navigation--list-li"><a class="navigation--list-anchor" href="contacts.html" target="_blank">Contacts</a></li>
+        </ul>
+        
+        
+    </nav>
+    
+    <main class="hobbies">
+        <header class="hobbies--header">
             <h1>Hobbies list</h1>
             <p>here are the list of images of my hobbies</p>
             <p>hobbies that genuinely interest me and contribute to a well-rounded image of who am I</p>
 
         </header>
-        <div class="image-container">
-            <div class="bcImage1">
-                <p>playing</p>
-                <p>football</p>
+        <div class="hobbies--image-container">
+            <div class="hobbies--image-container-bcImage1">
+                <p class="hobbies--image-container-p">playing</p>
+                <p class="hobbies--image-container-p">football</p>
             </div>
-            <div class="bcImage2">
-                <p>playing</p>
-                <p>gaming</p>
+            <div class="hobbies--image-container-bcImage2">
+                <p class="hobbies--image-container-p">playing</p>
+                <p class="hobbies--image-container-p">gaming</p>
 
             </div>
-            <div class="bcImage3">
-                <p>tech </p>
-                <p>gadgets</p>
+            <div class="hobbies--image-container-bcImage3">
+                <p class="hobbies--image-container-p">tech </p>
+                <p class="hobbies--image-container-p">gadgets</p>
             </div>
-            <div class="bcImage4">
-                <p>fitness and</p>
-                <p> wellness</p>
+            <div class="hobbies--image-container-bcImage4">
+                <p class="hobbies--image-container-p">fitness and</p>
+                <p class="hobbies--image-container-p"> wellness</p>
             </div>
-            <div class="bcImage5">
-                <p>watching</p>
-                <p>movies</p>
+            <div class="hobbies--image-container-bcImage5">
+                <p class="hobbies--image-container-p">watching</p>
+                <p class="hobbies--image-container-p">movies</p>
             </div>
-            <div class="bcImage6">
-                <p>reading</p>
-                <p>books</p>
+            <div class="hobbies--image-container-bcImage6">
+                <p class="hobbies--image-container-p">reading</p>
+                <p class="hobbies--image-container-p">books</p>
             </div>
-            <div class="bcImage7">
-                <p>traveling across</p>
-                <p>regions</p>
+            <div class="hobbies--image-container-bcImage7">
+                <p class="hobbies--image-container-p">traveling across</p>
+                <p class="hobbies--image-container-p">regions</p>
             </div>
-            <div class="bcImage8">
-                <p>voluntery</p>
-                <p>activvities</p>
+            <div class="hobbies--image-container-bcImage8">
+                <p class="hobbies--image-container-p">voluntery</p>
+                <p class="hobbies--image-container-p">activvities</p>
             </div>
-            <div class="bcImage9">
-                <p>web</p>
-                <p>designing</p>
+            <div class="hobbies--image-container-bcImage9">
+                <p class="hobbies--image-container-p">web</p>
+                <p class="hobbies--image-container-p">designing</p>
             </div>
-            <div class="bcImage10">
-                <p>listening</p>
-                <p>Music</p>
+            <div class="hobbies--image-container-bcImage10">
+                <p class="hobbies--image-container-p">listening</p>
+                <p class="hobbies--image-container-p">Music</p>
             </div>
-            <div class="bcImage11">
-                <p>art</p>
-                <p>works</p>
+            <div class="hobbies--image-container-bcImage11">
+                <p class="hobbies--image-container-p">art</p>
+                <p class="hobbies--image-container-p">works</p>
             </div>
-            <div class="bcImage12">
-                <p>graphic</p>
-                <p>design</p>
+            <div class="hobbies--image-container-bcImage12">
+                <p class="hobbies--image-container-p">graphic</p>
+                <p class="hobbies--image-container-p">design</p>
             </div>
         </div>
     </main>
-    <footer>
-        <img src="./images/ad.jpeg" alt=""> 
-        <p class="left"> Aderajew Yeshiwendm</p>
-        <p class="right">Copyright © 2023 Aderajew.</p>
-        <p class="right">my proficiency level is junior</p>
+    <footer class="footer">
+        <img class="navigation--logo-img" src="./images/ad.jpeg" alt=""> 
+        <p class="footer--left"> Aderajew Yeshiwendm</p>
+        <p class="footer--right">Copyright © 2023 Aderajew.</p>
+        <p class="footer--right">my proficiency level is junior</p>
+        
+
+    
     </footer>
+    
 </body>
 </html>
