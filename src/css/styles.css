@@ -13,87 +13,89 @@ html, body {
 
 body {
     margin: 0;
+    
 }
 
-.navigation--logo-img {
-    width: 30px;
-    height: 20px;
+  .navigation {
+    background-color: #555;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .navigation--logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  .navigation--logo-img,.img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
     border-radius: 50%;
-}
+  }
 
-.navigation {
-    background-color: black;
-    color: white; 
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    padding: 10px;
-}
-
-.navigation .navigation--list{
-    list-style-type: none;  
-    display: grid;
-    grid-auto-flow: column;
-    align-items: center;
-    gap: 10px;
-    margin-right: 10px;   
-}
-
-.navigation--mobile {
+  .navigation--mobile {
     display: none;
-}
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
 
-.navigation--list-dropdown {
+  .navigation--list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navigation--list-li {
+    margin-right: 20px;
+  }
+
+  .navigation--list-anchor {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+  }
+
+  .navigation--list-anchor:hover {
+    color: #ffcc00;
+  }
+
+  .navigation--list-dropdown,
+  .navigation--list-dropdown-dropdown-content {
     position: relative;
     display: inline-block;
-}
+  }
 
-.navigation--list-dropdown-dropdown-content {
+  .navigation--list--dropdown--dropdown-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  .navigation--list-dropdown-dropdown-content {
     display: none;
     position: absolute;
-    min-width: 100px;
-    box-shadow: 0 8px 16px 6px rgba(0, 0, 0, 0.3);
+    background-color: #333;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     z-index: 1;
-}
+  }
 
-.navigation--list--dropdown--dropdown-btn {
-    background-color: #111;
-    color: white;
-    border: none;
-    font-weight: bold;
-}
+  .navigation--list-dropdown:hover .navigation--list-dropdown-dropdown-content {
+    display: grid;
 
-.navigation--list-dropdown-dropdown-content .navigation--list-anchor {
-    display: block;
-    padding: 10px 20px;
-    color: white;
-    background-color: black;
-}
-
-.navigation--list-dropdown-dropdown-content .navigation--list--dropdown--dropdown-content-anchor:hover {
-    display: block;
-    padding: 10px 20px;
-    color: blue;
-}
-
-.navigation--list-dropdown:hover .navigation--list-dropdown-dropdown-content {
-    display: block;
-}
-
-.navigation--list .navigation--list-anchor {
-    text-decoration: none;
-    color: white; 
-}
-
-.navigation--list--dropdown--dropdown-content-anchor:hover, .navigation--list-anchor:hover {
-    color: blue;
-}
-
-.navigation--list .navigation--list--dropdown--dropdown-btn {
-    background-color: black;
-    color: white;
-    border: none;
-}
+    grid-template-columns: repeat(1,1fr);
+    grid-gap: 10px;
+    padding-left: 10px;
+  }
 .Home {
     display: grid;
     
@@ -115,8 +117,9 @@ body {
 }
 
 .Accomplishments {
-    background-color: #570505;
+    
     margin-bottom: 2px;
+    
 }
 
 .Accomlishments--header {
@@ -142,7 +145,7 @@ body {
 }
 .contacts {
     color: white;
-    background-color: rgb(220, 158, 13);
+    
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -172,7 +175,9 @@ body {
     grid-gap: 10px;
     margin-top: 5px;
     margin-bottom: 10px;
-    background-color: #48f000;}
+    background-color: #48f000;
+    height: 100vh;
+}
 .hobbies--image-container-bcImage1{
     background: url(/images/football.jpeg) no-repeat;
     border-radius: 9px;
@@ -286,35 +291,33 @@ body {
 }
 
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-   
-    .navigation .navigation--list{
-        display: none;  
-    }
     
-    .navigation--mobile{
-        width: 40px;
-        height: 30px;
-        background-color: white;
-        color: #000;
+    .navigation--mobile {
+        display: block;
+      }
+
+      .navigation--list {
+        display: none;
+        flex-direction: column;
+        background-color: #444;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        padding-left: 20px;
+      }
+
+      .navigation--list.active {
         display: grid;
-    }
-    .navigation--mobile:focus + .navigation--list,
-    .navigation .navigation--list:hover{
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        justify-content: end;  
-    }
-    .navigation--list-li{
-        padding: 10px;
-    }
-    .navigation--list-dropdown {
-        
-        display: grid;
-        grid-template-columns: 1fr;
-    }
-    .navigation--list-dropdown-dropdown-content{
-        margin-top: 50px;
-    }
+        grid-template-columns: repeat(1,1fr);
+      }
+
+      .navigation--list-li {
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
     .Home--section{
         height: 90vh;
     }
@@ -548,4 +551,3 @@ body {
         height: 90vh;
     }
 } 
-
